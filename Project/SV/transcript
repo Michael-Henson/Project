@@ -1,3 +1,24 @@
+# do datapath.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is mhens11@CEAT-ENDV350-05.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 17:15:39 on Nov 08,2023
+# vlog datapath.sv datapath_tb.sv 
+# -- Compiling module datapath
+# -- Compiling module evolve3
+# -- Compiling module evolve5
+# -- Compiling module evolve8
+# -- Compiling module rules
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# End time: 17:15:39 on Nov 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.stimulus 
+# Start time: 17:15:39 on Nov 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2021.3 Jul 13 2021
 # //
 # //  Copyright 1991-2021 Mentor Graphics Corporation
@@ -11,24 +32,6 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do datapath.do
-# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 16:16:20 on Nov 08,2023
-# vlog -reportprogress 300 datapath.sv datapath_tb.sv 
-# -- Compiling module datapath
-# -- Compiling module evolve3
-# -- Compiling module evolve5
-# -- Compiling module evolve8
-# -- Compiling module rules
-# -- Compiling module stimulus
-# 
-# Top level modules:
-# 	stimulus
-# End time: 16:16:20 on Nov 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.stimulus 
-# Start time: 16:16:20 on Nov 08,2023
-# ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.stimulus(fast)
 # Loading work.datapath(fast)
@@ -36,9 +39,1113 @@
 # Loading work.rules(fast)
 # Loading work.evolve5(fast)
 # Loading work.evolve8(fast)
-# .main_pane.list.interior.cs.body
-# .main_pane.wave.interior.cs.body.pw.wf
-# ** Note: $finish    : datapath_tb.sv(38)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e16'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e16 File: datapath.sv Line: 29
+# ** Warning: (vsim-3722) datapath.sv(29): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(29): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e17'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e17 File: datapath.sv Line: 30
+# ** Warning: (vsim-3722) datapath.sv(30): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(30): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(30): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e18'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e18 File: datapath.sv Line: 31
+# ** Warning: (vsim-3722) datapath.sv(31): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(31): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(31): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e19'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e19 File: datapath.sv Line: 32
+# ** Warning: (vsim-3722) datapath.sv(32): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(32): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(32): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e20'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e20 File: datapath.sv Line: 33
+# ** Warning: (vsim-3722) datapath.sv(33): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(33): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(33): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e21'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e21 File: datapath.sv Line: 34
+# ** Warning: (vsim-3722) datapath.sv(34): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(34): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(34): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e22'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e22 File: datapath.sv Line: 35
+# ** Warning: (vsim-3722) datapath.sv(35): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(35): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(35): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e23'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e23 File: datapath.sv Line: 36
+# ** Warning: (vsim-3722) datapath.sv(36): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(36): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(36): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e24'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e24 File: datapath.sv Line: 37
+# ** Warning: (vsim-3722) datapath.sv(37): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(37): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(37): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e25'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e25 File: datapath.sv Line: 38
+# ** Warning: (vsim-3722) datapath.sv(38): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(38): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(38): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e26'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e26 File: datapath.sv Line: 39
+# ** Warning: (vsim-3722) datapath.sv(39): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(39): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(39): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e27'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e27 File: datapath.sv Line: 40
+# ** Warning: (vsim-3722) datapath.sv(40): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(40): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(40): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e28'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e28 File: datapath.sv Line: 41
+# ** Warning: (vsim-3722) datapath.sv(41): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(41): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(41): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e29'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e29 File: datapath.sv Line: 42
+# ** Warning: (vsim-3722) datapath.sv(42): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(42): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e30'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e30 File: datapath.sv Line: 44
+# ** Warning: (vsim-3722) datapath.sv(44): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(44): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e31'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e31 File: datapath.sv Line: 45
+# ** Warning: (vsim-3722) datapath.sv(45): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(45): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(45): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e32'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e32 File: datapath.sv Line: 46
+# ** Warning: (vsim-3722) datapath.sv(46): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(46): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(46): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e33'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e33 File: datapath.sv Line: 47
+# ** Warning: (vsim-3722) datapath.sv(47): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(47): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(47): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e34'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e34 File: datapath.sv Line: 48
+# ** Warning: (vsim-3722) datapath.sv(48): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(48): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(48): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e35'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e35 File: datapath.sv Line: 49
+# ** Warning: (vsim-3722) datapath.sv(49): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(49): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(49): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e36'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e36 File: datapath.sv Line: 50
+# ** Warning: (vsim-3722) datapath.sv(50): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(50): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(50): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e37'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e37 File: datapath.sv Line: 51
+# ** Warning: (vsim-3722) datapath.sv(51): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(51): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(51): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e38'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e38 File: datapath.sv Line: 52
+# ** Warning: (vsim-3722) datapath.sv(52): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(52): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(52): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e39'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e39 File: datapath.sv Line: 53
+# ** Warning: (vsim-3722) datapath.sv(53): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(53): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(53): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e40'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e40 File: datapath.sv Line: 54
+# ** Warning: (vsim-3722) datapath.sv(54): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(54): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(54): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e41'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e41 File: datapath.sv Line: 55
+# ** Warning: (vsim-3722) datapath.sv(55): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(55): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(55): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e42'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e42 File: datapath.sv Line: 56
+# ** Warning: (vsim-3722) datapath.sv(56): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(56): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(56): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e43'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e43 File: datapath.sv Line: 57
+# ** Warning: (vsim-3722) datapath.sv(57): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(57): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(57): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e44'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e44 File: datapath.sv Line: 58
+# ** Warning: (vsim-3722) datapath.sv(58): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(58): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(58): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e45'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e45 File: datapath.sv Line: 59
+# ** Warning: (vsim-3722) datapath.sv(59): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(59): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(59): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e46'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e46 File: datapath.sv Line: 60
+# ** Warning: (vsim-3722) datapath.sv(60): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(60): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(60): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e47'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e47 File: datapath.sv Line: 61
+# ** Warning: (vsim-3722) datapath.sv(61): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(61): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e48'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e48 File: datapath.sv Line: 63
+# ** Warning: (vsim-3722) datapath.sv(63): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(63): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e49'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e49 File: datapath.sv Line: 64
+# ** Warning: (vsim-3722) datapath.sv(64): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(64): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(64): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e50'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e50 File: datapath.sv Line: 65
+# ** Warning: (vsim-3722) datapath.sv(65): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(65): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(65): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e51'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e51 File: datapath.sv Line: 66
+# ** Warning: (vsim-3722) datapath.sv(66): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(66): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(66): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e52'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e52 File: datapath.sv Line: 67
+# ** Warning: (vsim-3722) datapath.sv(67): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(67): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(67): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e53'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e53 File: datapath.sv Line: 68
+# ** Warning: (vsim-3722) datapath.sv(68): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(68): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(68): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e54'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e54 File: datapath.sv Line: 69
+# ** Warning: (vsim-3722) datapath.sv(69): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(69): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(69): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e55'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e55 File: datapath.sv Line: 70
+# ** Warning: (vsim-3722) datapath.sv(70): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(70): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(70): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e56'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e56 File: datapath.sv Line: 71
+# ** Warning: (vsim-3722) datapath.sv(71): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(71): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(71): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e57'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e57 File: datapath.sv Line: 72
+# ** Warning: (vsim-3722) datapath.sv(72): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(72): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(72): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e58'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e58 File: datapath.sv Line: 73
+# ** Warning: (vsim-3722) datapath.sv(73): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(73): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(73): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e59'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e59 File: datapath.sv Line: 74
+# ** Warning: (vsim-3722) datapath.sv(74): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(74): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(74): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e60'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e60 File: datapath.sv Line: 75
+# ** Warning: (vsim-3722) datapath.sv(75): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(75): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(75): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e61'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e61 File: datapath.sv Line: 76
+# ** Warning: (vsim-3722) datapath.sv(76): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(76): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(76): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e62'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e62 File: datapath.sv Line: 77
+# ** Warning: (vsim-3722) datapath.sv(77): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(77): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(77): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e63'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e63 File: datapath.sv Line: 78
+# ** Warning: (vsim-3722) datapath.sv(78): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(78): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e64'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e64 File: datapath.sv Line: 80
+# ** Warning: (vsim-3722) datapath.sv(80): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(80): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e65'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e65 File: datapath.sv Line: 81
+# ** Warning: (vsim-3722) datapath.sv(81): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(81): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(81): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e66'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e66 File: datapath.sv Line: 82
+# ** Warning: (vsim-3722) datapath.sv(82): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(82): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(82): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e67'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e67 File: datapath.sv Line: 83
+# ** Warning: (vsim-3722) datapath.sv(83): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(83): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(83): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e68'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e68 File: datapath.sv Line: 84
+# ** Warning: (vsim-3722) datapath.sv(84): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(84): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(84): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e69'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e69 File: datapath.sv Line: 85
+# ** Warning: (vsim-3722) datapath.sv(85): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(85): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(85): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e70'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e70 File: datapath.sv Line: 86
+# ** Warning: (vsim-3722) datapath.sv(86): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(86): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(86): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e71'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e71 File: datapath.sv Line: 87
+# ** Warning: (vsim-3722) datapath.sv(87): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(87): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(87): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e72'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e72 File: datapath.sv Line: 88
+# ** Warning: (vsim-3722) datapath.sv(88): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(88): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(88): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e73'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e73 File: datapath.sv Line: 89
+# ** Warning: (vsim-3722) datapath.sv(89): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(89): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(89): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e74'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e74 File: datapath.sv Line: 90
+# ** Warning: (vsim-3722) datapath.sv(90): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(90): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(90): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e75'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e75 File: datapath.sv Line: 91
+# ** Warning: (vsim-3722) datapath.sv(91): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(91): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(91): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e76'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e76 File: datapath.sv Line: 92
+# ** Warning: (vsim-3722) datapath.sv(92): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(92): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(92): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e77'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e77 File: datapath.sv Line: 93
+# ** Warning: (vsim-3722) datapath.sv(93): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(93): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(93): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e78'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e78 File: datapath.sv Line: 94
+# ** Warning: (vsim-3722) datapath.sv(94): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(94): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(94): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e79'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e79 File: datapath.sv Line: 95
+# ** Warning: (vsim-3722) datapath.sv(95): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(95): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e80'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e80 File: datapath.sv Line: 97
+# ** Warning: (vsim-3722) datapath.sv(97): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(97): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e81'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e81 File: datapath.sv Line: 98
+# ** Warning: (vsim-3722) datapath.sv(98): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(98): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(98): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e82'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e82 File: datapath.sv Line: 99
+# ** Warning: (vsim-3722) datapath.sv(99): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(99): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(99): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e83'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e83 File: datapath.sv Line: 100
+# ** Warning: (vsim-3722) datapath.sv(100): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(100): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(100): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e84'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e84 File: datapath.sv Line: 101
+# ** Warning: (vsim-3722) datapath.sv(101): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(101): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(101): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e85'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e85 File: datapath.sv Line: 102
+# ** Warning: (vsim-3722) datapath.sv(102): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(102): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(102): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e86'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e86 File: datapath.sv Line: 103
+# ** Warning: (vsim-3722) datapath.sv(103): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(103): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(103): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e87'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e87 File: datapath.sv Line: 104
+# ** Warning: (vsim-3722) datapath.sv(104): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(104): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(104): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e88'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e88 File: datapath.sv Line: 105
+# ** Warning: (vsim-3722) datapath.sv(105): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(105): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(105): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e89'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e89 File: datapath.sv Line: 106
+# ** Warning: (vsim-3722) datapath.sv(106): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(106): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(106): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e90'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e90 File: datapath.sv Line: 107
+# ** Warning: (vsim-3722) datapath.sv(107): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(107): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(107): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e91'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e91 File: datapath.sv Line: 108
+# ** Warning: (vsim-3722) datapath.sv(108): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(108): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(108): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e92'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e92 File: datapath.sv Line: 109
+# ** Warning: (vsim-3722) datapath.sv(109): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(109): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(109): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e93'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e93 File: datapath.sv Line: 110
+# ** Warning: (vsim-3722) datapath.sv(110): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(110): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(110): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e94'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e94 File: datapath.sv Line: 111
+# ** Warning: (vsim-3722) datapath.sv(111): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(111): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(111): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e95'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e95 File: datapath.sv Line: 112
+# ** Warning: (vsim-3722) datapath.sv(112): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(112): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e96'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e96 File: datapath.sv Line: 114
+# ** Warning: (vsim-3722) datapath.sv(114): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(114): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e97'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e97 File: datapath.sv Line: 115
+# ** Warning: (vsim-3722) datapath.sv(115): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(115): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(115): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e98'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e98 File: datapath.sv Line: 116
+# ** Warning: (vsim-3722) datapath.sv(116): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(116): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(116): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e99'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e99 File: datapath.sv Line: 117
+# ** Warning: (vsim-3722) datapath.sv(117): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(117): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(117): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e100'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e100 File: datapath.sv Line: 118
+# ** Warning: (vsim-3722) datapath.sv(118): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(118): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(118): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e101'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e101 File: datapath.sv Line: 119
+# ** Warning: (vsim-3722) datapath.sv(119): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(119): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(119): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e102'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e102 File: datapath.sv Line: 120
+# ** Warning: (vsim-3722) datapath.sv(120): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(120): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(120): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e103'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e103 File: datapath.sv Line: 121
+# ** Warning: (vsim-3722) datapath.sv(121): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(121): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(121): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e104'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e104 File: datapath.sv Line: 122
+# ** Warning: (vsim-3722) datapath.sv(122): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(122): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(122): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e105'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e105 File: datapath.sv Line: 123
+# ** Warning: (vsim-3722) datapath.sv(123): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(123): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(123): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e106'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e106 File: datapath.sv Line: 124
+# ** Warning: (vsim-3722) datapath.sv(124): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(124): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(124): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e107'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e107 File: datapath.sv Line: 125
+# ** Warning: (vsim-3722) datapath.sv(125): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(125): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(125): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e108'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e108 File: datapath.sv Line: 126
+# ** Warning: (vsim-3722) datapath.sv(126): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(126): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(126): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e109'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e109 File: datapath.sv Line: 127
+# ** Warning: (vsim-3722) datapath.sv(127): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(127): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(127): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e110'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e110 File: datapath.sv Line: 128
+# ** Warning: (vsim-3722) datapath.sv(128): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(128): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(128): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e111'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e111 File: datapath.sv Line: 129
+# ** Warning: (vsim-3722) datapath.sv(129): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(129): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e112'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e112 File: datapath.sv Line: 131
+# ** Warning: (vsim-3722) datapath.sv(131): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(131): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e113'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e113 File: datapath.sv Line: 132
+# ** Warning: (vsim-3722) datapath.sv(132): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(132): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(132): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e114'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e114 File: datapath.sv Line: 133
+# ** Warning: (vsim-3722) datapath.sv(133): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(133): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(133): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e115'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e115 File: datapath.sv Line: 134
+# ** Warning: (vsim-3722) datapath.sv(134): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(134): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(134): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e116'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e116 File: datapath.sv Line: 135
+# ** Warning: (vsim-3722) datapath.sv(135): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(135): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(135): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e117'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e117 File: datapath.sv Line: 136
+# ** Warning: (vsim-3722) datapath.sv(136): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(136): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(136): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e118'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e118 File: datapath.sv Line: 137
+# ** Warning: (vsim-3722) datapath.sv(137): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(137): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(137): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e119'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e119 File: datapath.sv Line: 138
+# ** Warning: (vsim-3722) datapath.sv(138): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(138): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(138): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e120'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e120 File: datapath.sv Line: 139
+# ** Warning: (vsim-3722) datapath.sv(139): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(139): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(139): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e121'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e121 File: datapath.sv Line: 140
+# ** Warning: (vsim-3722) datapath.sv(140): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(140): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(140): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e122'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e122 File: datapath.sv Line: 141
+# ** Warning: (vsim-3722) datapath.sv(141): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(141): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(141): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e123'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e123 File: datapath.sv Line: 142
+# ** Warning: (vsim-3722) datapath.sv(142): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(142): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(142): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e124'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e124 File: datapath.sv Line: 143
+# ** Warning: (vsim-3722) datapath.sv(143): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(143): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(143): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e125'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e125 File: datapath.sv Line: 144
+# ** Warning: (vsim-3722) datapath.sv(144): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(144): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(144): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e126'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e126 File: datapath.sv Line: 145
+# ** Warning: (vsim-3722) datapath.sv(145): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(145): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(145): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e127'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e127 File: datapath.sv Line: 146
+# ** Warning: (vsim-3722) datapath.sv(146): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(146): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e128'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e128 File: datapath.sv Line: 148
+# ** Warning: (vsim-3722) datapath.sv(148): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(148): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e129'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e129 File: datapath.sv Line: 149
+# ** Warning: (vsim-3722) datapath.sv(149): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(149): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(149): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e130'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e130 File: datapath.sv Line: 150
+# ** Warning: (vsim-3722) datapath.sv(150): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(150): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(150): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e131'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e131 File: datapath.sv Line: 151
+# ** Warning: (vsim-3722) datapath.sv(151): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(151): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(151): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e132'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e132 File: datapath.sv Line: 152
+# ** Warning: (vsim-3722) datapath.sv(152): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(152): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(152): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e133'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e133 File: datapath.sv Line: 153
+# ** Warning: (vsim-3722) datapath.sv(153): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(153): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(153): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e134'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e134 File: datapath.sv Line: 154
+# ** Warning: (vsim-3722) datapath.sv(154): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(154): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(154): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e135'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e135 File: datapath.sv Line: 155
+# ** Warning: (vsim-3722) datapath.sv(155): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(155): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(155): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e136'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e136 File: datapath.sv Line: 156
+# ** Warning: (vsim-3722) datapath.sv(156): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(156): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(156): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e137'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e137 File: datapath.sv Line: 157
+# ** Warning: (vsim-3722) datapath.sv(157): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(157): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(157): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e138'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e138 File: datapath.sv Line: 158
+# ** Warning: (vsim-3722) datapath.sv(158): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(158): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(158): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e139'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e139 File: datapath.sv Line: 159
+# ** Warning: (vsim-3722) datapath.sv(159): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(159): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(159): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e140'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e140 File: datapath.sv Line: 160
+# ** Warning: (vsim-3722) datapath.sv(160): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(160): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(160): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e141'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e141 File: datapath.sv Line: 161
+# ** Warning: (vsim-3722) datapath.sv(161): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(161): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(161): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e142'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e142 File: datapath.sv Line: 162
+# ** Warning: (vsim-3722) datapath.sv(162): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(162): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(162): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e143'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e143 File: datapath.sv Line: 163
+# ** Warning: (vsim-3722) datapath.sv(163): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(163): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e144'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e144 File: datapath.sv Line: 165
+# ** Warning: (vsim-3722) datapath.sv(165): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(165): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e145'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e145 File: datapath.sv Line: 166
+# ** Warning: (vsim-3722) datapath.sv(166): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(166): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(166): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e146'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e146 File: datapath.sv Line: 167
+# ** Warning: (vsim-3722) datapath.sv(167): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(167): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(167): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e147'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e147 File: datapath.sv Line: 168
+# ** Warning: (vsim-3722) datapath.sv(168): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(168): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(168): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e148'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e148 File: datapath.sv Line: 169
+# ** Warning: (vsim-3722) datapath.sv(169): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(169): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(169): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e149'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e149 File: datapath.sv Line: 170
+# ** Warning: (vsim-3722) datapath.sv(170): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(170): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(170): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e150'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e150 File: datapath.sv Line: 171
+# ** Warning: (vsim-3722) datapath.sv(171): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(171): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(171): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e151'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e151 File: datapath.sv Line: 172
+# ** Warning: (vsim-3722) datapath.sv(172): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(172): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(172): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e152'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e152 File: datapath.sv Line: 173
+# ** Warning: (vsim-3722) datapath.sv(173): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(173): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(173): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e153'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e153 File: datapath.sv Line: 174
+# ** Warning: (vsim-3722) datapath.sv(174): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(174): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(174): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e154'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e154 File: datapath.sv Line: 175
+# ** Warning: (vsim-3722) datapath.sv(175): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(175): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(175): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e155'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e155 File: datapath.sv Line: 176
+# ** Warning: (vsim-3722) datapath.sv(176): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(176): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(176): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e156'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e156 File: datapath.sv Line: 177
+# ** Warning: (vsim-3722) datapath.sv(177): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(177): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(177): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e157'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e157 File: datapath.sv Line: 178
+# ** Warning: (vsim-3722) datapath.sv(178): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(178): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(178): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e158'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e158 File: datapath.sv Line: 179
+# ** Warning: (vsim-3722) datapath.sv(179): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(179): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(179): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e159'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e159 File: datapath.sv Line: 180
+# ** Warning: (vsim-3722) datapath.sv(180): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(180): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e160'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e160 File: datapath.sv Line: 182
+# ** Warning: (vsim-3722) datapath.sv(182): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(182): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e161'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e161 File: datapath.sv Line: 183
+# ** Warning: (vsim-3722) datapath.sv(183): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(183): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(183): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e162'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e162 File: datapath.sv Line: 184
+# ** Warning: (vsim-3722) datapath.sv(184): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(184): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(184): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e163'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e163 File: datapath.sv Line: 185
+# ** Warning: (vsim-3722) datapath.sv(185): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(185): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(185): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e164'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e164 File: datapath.sv Line: 186
+# ** Warning: (vsim-3722) datapath.sv(186): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(186): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(186): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e165'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e165 File: datapath.sv Line: 187
+# ** Warning: (vsim-3722) datapath.sv(187): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(187): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(187): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e166'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e166 File: datapath.sv Line: 188
+# ** Warning: (vsim-3722) datapath.sv(188): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(188): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(188): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e167'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e167 File: datapath.sv Line: 189
+# ** Warning: (vsim-3722) datapath.sv(189): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(189): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(189): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e168'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e168 File: datapath.sv Line: 190
+# ** Warning: (vsim-3722) datapath.sv(190): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(190): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(190): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e169'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e169 File: datapath.sv Line: 191
+# ** Warning: (vsim-3722) datapath.sv(191): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(191): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(191): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e170'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e170 File: datapath.sv Line: 192
+# ** Warning: (vsim-3722) datapath.sv(192): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(192): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(192): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e171'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e171 File: datapath.sv Line: 193
+# ** Warning: (vsim-3722) datapath.sv(193): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(193): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(193): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e172'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e172 File: datapath.sv Line: 194
+# ** Warning: (vsim-3722) datapath.sv(194): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(194): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(194): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e173'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e173 File: datapath.sv Line: 195
+# ** Warning: (vsim-3722) datapath.sv(195): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(195): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(195): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e174'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e174 File: datapath.sv Line: 196
+# ** Warning: (vsim-3722) datapath.sv(196): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(196): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(196): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e175'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e175 File: datapath.sv Line: 197
+# ** Warning: (vsim-3722) datapath.sv(197): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(197): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e176'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e176 File: datapath.sv Line: 199
+# ** Warning: (vsim-3722) datapath.sv(199): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(199): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e177'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e177 File: datapath.sv Line: 200
+# ** Warning: (vsim-3722) datapath.sv(200): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(200): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(200): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e178'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e178 File: datapath.sv Line: 201
+# ** Warning: (vsim-3722) datapath.sv(201): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(201): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(201): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e179'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e179 File: datapath.sv Line: 202
+# ** Warning: (vsim-3722) datapath.sv(202): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(202): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(202): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e180'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e180 File: datapath.sv Line: 203
+# ** Warning: (vsim-3722) datapath.sv(203): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(203): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(203): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e181'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e181 File: datapath.sv Line: 204
+# ** Warning: (vsim-3722) datapath.sv(204): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(204): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(204): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e182'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e182 File: datapath.sv Line: 205
+# ** Warning: (vsim-3722) datapath.sv(205): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(205): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(205): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e183'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e183 File: datapath.sv Line: 206
+# ** Warning: (vsim-3722) datapath.sv(206): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(206): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(206): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e184'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e184 File: datapath.sv Line: 207
+# ** Warning: (vsim-3722) datapath.sv(207): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(207): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(207): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e185'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e185 File: datapath.sv Line: 208
+# ** Warning: (vsim-3722) datapath.sv(208): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(208): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(208): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e186'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e186 File: datapath.sv Line: 209
+# ** Warning: (vsim-3722) datapath.sv(209): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(209): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(209): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e187'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e187 File: datapath.sv Line: 210
+# ** Warning: (vsim-3722) datapath.sv(210): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(210): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(210): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e188'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e188 File: datapath.sv Line: 211
+# ** Warning: (vsim-3722) datapath.sv(211): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(211): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(211): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e189'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e189 File: datapath.sv Line: 212
+# ** Warning: (vsim-3722) datapath.sv(212): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(212): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(212): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e190'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e190 File: datapath.sv Line: 213
+# ** Warning: (vsim-3722) datapath.sv(213): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(213): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(213): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e191'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e191 File: datapath.sv Line: 214
+# ** Warning: (vsim-3722) datapath.sv(214): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(214): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e192'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e192 File: datapath.sv Line: 216
+# ** Warning: (vsim-3722) datapath.sv(216): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(216): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e193'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e193 File: datapath.sv Line: 217
+# ** Warning: (vsim-3722) datapath.sv(217): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(217): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(217): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e194'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e194 File: datapath.sv Line: 218
+# ** Warning: (vsim-3722) datapath.sv(218): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(218): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(218): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e195'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e195 File: datapath.sv Line: 219
+# ** Warning: (vsim-3722) datapath.sv(219): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(219): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(219): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e196'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e196 File: datapath.sv Line: 220
+# ** Warning: (vsim-3722) datapath.sv(220): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(220): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(220): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e197'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e197 File: datapath.sv Line: 221
+# ** Warning: (vsim-3722) datapath.sv(221): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(221): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(221): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e198'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e198 File: datapath.sv Line: 222
+# ** Warning: (vsim-3722) datapath.sv(222): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(222): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(222): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e199'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e199 File: datapath.sv Line: 223
+# ** Warning: (vsim-3722) datapath.sv(223): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(223): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(223): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e200'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e200 File: datapath.sv Line: 224
+# ** Warning: (vsim-3722) datapath.sv(224): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(224): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(224): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e201'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e201 File: datapath.sv Line: 225
+# ** Warning: (vsim-3722) datapath.sv(225): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(225): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(225): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e202'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e202 File: datapath.sv Line: 226
+# ** Warning: (vsim-3722) datapath.sv(226): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(226): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(226): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e203'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e203 File: datapath.sv Line: 227
+# ** Warning: (vsim-3722) datapath.sv(227): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(227): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(227): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e204'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e204 File: datapath.sv Line: 228
+# ** Warning: (vsim-3722) datapath.sv(228): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(228): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(228): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e205'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e205 File: datapath.sv Line: 229
+# ** Warning: (vsim-3722) datapath.sv(229): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(229): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(229): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e206'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e206 File: datapath.sv Line: 230
+# ** Warning: (vsim-3722) datapath.sv(230): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(230): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(230): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e207'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e207 File: datapath.sv Line: 231
+# ** Warning: (vsim-3722) datapath.sv(231): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(231): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e208'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e208 File: datapath.sv Line: 233
+# ** Warning: (vsim-3722) datapath.sv(233): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(233): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e209'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e209 File: datapath.sv Line: 234
+# ** Warning: (vsim-3722) datapath.sv(234): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(234): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(234): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e210'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e210 File: datapath.sv Line: 235
+# ** Warning: (vsim-3722) datapath.sv(235): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(235): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(235): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e211'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e211 File: datapath.sv Line: 236
+# ** Warning: (vsim-3722) datapath.sv(236): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(236): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(236): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e212'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e212 File: datapath.sv Line: 237
+# ** Warning: (vsim-3722) datapath.sv(237): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(237): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(237): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e213'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e213 File: datapath.sv Line: 238
+# ** Warning: (vsim-3722) datapath.sv(238): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(238): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(238): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e214'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e214 File: datapath.sv Line: 239
+# ** Warning: (vsim-3722) datapath.sv(239): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(239): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(239): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e215'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e215 File: datapath.sv Line: 240
+# ** Warning: (vsim-3722) datapath.sv(240): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(240): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(240): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e216'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e216 File: datapath.sv Line: 241
+# ** Warning: (vsim-3722) datapath.sv(241): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(241): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(241): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e217'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e217 File: datapath.sv Line: 242
+# ** Warning: (vsim-3722) datapath.sv(242): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(242): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(242): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e218'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e218 File: datapath.sv Line: 243
+# ** Warning: (vsim-3722) datapath.sv(243): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(243): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(243): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e219'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e219 File: datapath.sv Line: 244
+# ** Warning: (vsim-3722) datapath.sv(244): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(244): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(244): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e220'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e220 File: datapath.sv Line: 245
+# ** Warning: (vsim-3722) datapath.sv(245): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(245): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(245): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e221'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e221 File: datapath.sv Line: 246
+# ** Warning: (vsim-3722) datapath.sv(246): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(246): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(246): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e222'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e222 File: datapath.sv Line: 247
+# ** Warning: (vsim-3722) datapath.sv(247): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(247): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(247): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e223'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e223 File: datapath.sv Line: 248
+# ** Warning: (vsim-3722) datapath.sv(248): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(248): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e224'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e224 File: datapath.sv Line: 250
+# ** Warning: (vsim-3722) datapath.sv(250): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(250): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e225'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e225 File: datapath.sv Line: 251
+# ** Warning: (vsim-3722) datapath.sv(251): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(251): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(251): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e226'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e226 File: datapath.sv Line: 252
+# ** Warning: (vsim-3722) datapath.sv(252): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(252): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(252): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e227'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e227 File: datapath.sv Line: 253
+# ** Warning: (vsim-3722) datapath.sv(253): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(253): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(253): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e228'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e228 File: datapath.sv Line: 254
+# ** Warning: (vsim-3722) datapath.sv(254): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(254): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(254): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e229'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e229 File: datapath.sv Line: 255
+# ** Warning: (vsim-3722) datapath.sv(255): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(255): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(255): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e230'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e230 File: datapath.sv Line: 256
+# ** Warning: (vsim-3722) datapath.sv(256): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(256): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(256): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e231'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e231 File: datapath.sv Line: 257
+# ** Warning: (vsim-3722) datapath.sv(257): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(257): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(257): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e232'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e232 File: datapath.sv Line: 258
+# ** Warning: (vsim-3722) datapath.sv(258): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(258): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(258): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e233'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e233 File: datapath.sv Line: 259
+# ** Warning: (vsim-3722) datapath.sv(259): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(259): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(259): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e234'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e234 File: datapath.sv Line: 260
+# ** Warning: (vsim-3722) datapath.sv(260): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(260): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(260): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e235'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e235 File: datapath.sv Line: 261
+# ** Warning: (vsim-3722) datapath.sv(261): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(261): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(261): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e236'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e236 File: datapath.sv Line: 262
+# ** Warning: (vsim-3722) datapath.sv(262): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(262): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(262): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e237'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e237 File: datapath.sv Line: 263
+# ** Warning: (vsim-3722) datapath.sv(263): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(263): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(263): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e238'.  Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e238 File: datapath.sv Line: 264
+# ** Warning: (vsim-3722) datapath.sv(264): [TFMPC] - Missing connection for port 'vector7'.
+# ** Warning: (vsim-3722) datapath.sv(264): [TFMPC] - Missing connection for port 'vector8'.
+# ** Warning: (vsim-3722) datapath.sv(264): [TFMPC] - Missing connection for port 'current_state'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'e239'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/e239 File: datapath.sv Line: 265
+# ** Warning: (vsim-3722) datapath.sv(265): [TFMPC] - Missing connection for port 'vector5'.
+# ** Warning: (vsim-3722) datapath.sv(265): [TFMPC] - Missing connection for port 'current_state'.
+# .list
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mhens11  Hostname: CEAT-ENDV350-05  ProcessID: 23992
+#           Attempting to use alternate WLF file "./wlft935w85".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft935w85
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# ** Note: $finish    : datapath_tb.sv(47)
 #    Time: 500 ns  Iteration: 0  Instance: /stimulus
-# 1
-# Break in Module stimulus at datapath_tb.sv line 38
+# End time: 17:15:41 on Nov 08,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 870

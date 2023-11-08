@@ -1,7 +1,9 @@
 m255
 K4
 z2
-!s99 nomlopt
+Z0 !s99 nomlopt
+R0
+R0
 !s11f vlog 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
@@ -9,158 +11,169 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/mhens11/Desktop/Project/Project/SV
+Z1 dC:/Users/mhens11/Desktop/Project/Project/SV
 T_opt
 !s110 1699481781
 VXTze>ajMLMNfOh`CYj>Gn0
-04 8 4 work stimulus fast 0
+Z2 04 8 4 work stimulus fast 0
 =1-00be4390592b-654c08b4-350-5db8
-!s124 OEM100
-o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
 n@_opt
-OL;O;2021.3;73
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+Z7 !s110 1699485339
+V8Gnb8bZ>a_1EaN9kzE1dR2
+R2
+=1-00be4390592b-654c169b-2bc-6798
+R3
+R4
+R5
+n@_opt1
+R6
 vdatapath
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1699481780
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R7
 !i10b 1
-!s100 V;C_hS8f1BHnb36LBjYJ01
-I<ahlD=61ndBBilL@NE8dL1
+!s100 K;KB]2WYT]`m3_A:lJNXz1
+IL@[95Z:=DP^=?7U`aPZFb3
 S1
-R0
-Z4 w1699478899
-Z5 8datapath.sv
-Z6 Fdatapath.sv
+R1
+Z9 w1699485206
+Z10 8datapath.sv
+Z11 Fdatapath.sv
 !i122 0
-L0 7 79
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-Z8 OL;L;2021.3;73
+L0 7 279
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z9 !s108 1699481780.000000
-Z10 !s107 datapath_tb.sv|datapath.sv|
-Z11 !s90 -reportprogress|300|datapath.sv|datapath_tb.sv|
+Z14 !s108 1699485339.000000
+Z15 !s107 datapath_tb.sv|datapath.sv|
+Z16 !s90 datapath.sv|datapath_tb.sv|
 !i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+Z17 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
 vevolve3
-R2
-R3
-!i10b 1
-!s100 IXoNo]gEC0MZaJ37;nO_30
-IM8klP?6AAQElYj^^>dMog1
-S1
-R0
-R4
-R5
-R6
-!i122 0
-L0 88 14
-R7
 R8
-r1
-!s85 0
-31
+R7
+!i10b 1
+!s100 8^BVJikPf7Vi=m;z4NH3l0
+IoHcj0oK;f`oD_V?R557D21
+S1
+R1
 R9
 R10
 R11
-!i113 0
+!i122 0
+L0 288 14
 R12
-R1
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
 vevolve5
-R2
-R3
-!i10b 1
-!s100 I^MlKOK_W3OeeJBMAXc:W2
-I:N2@j2?Hz8T^_^8H8DMB42
-S1
-R0
-R4
-R5
-R6
-!i122 0
-L0 103 17
-R7
 R8
-r1
-!s85 0
-31
+R7
+!i10b 1
+!s100 3G^SJC<C_2d21G;icTme`0
+IoanDVkZVDaUeAN?[6];bk3
+S1
+R1
 R9
 R10
 R11
-!i113 0
+!i122 0
+L0 303 17
 R12
-R1
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
 vevolve8
-R2
-R3
-!i10b 1
-!s100 X=VQ5`4bnRg0]4e9c_9PV1
-I9=CLF7`lSL3IgfFX:JW2G3
-S1
-R0
-R4
-R5
-R6
-!i122 0
-L0 122 23
-R7
 R8
-r1
-!s85 0
-31
+R7
+!i10b 1
+!s100 ;QLzWeGa^ZJDA7=4Tz8R@3
+I[<ioRQecKQiK?E3>^U8^`0
+S1
+R1
 R9
 R10
 R11
-!i113 0
+!i122 0
+L0 322 23
 R12
-R1
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
 vrules
-R2
-R3
-!i10b 1
-!s100 JL3^U4`<X^MUIi:l8LemW2
-IBcFBl4c5NRZOko>2=jFA93
-S1
-R0
-R4
-R5
-R6
-!i122 0
-L0 147 9
-R7
 R8
-r1
-!s85 0
-31
+R7
+!i10b 1
+!s100 Q893N6A78^DZQQ^2<TiG;0
+IDBlb:KD<T7@BD8o6[=GA_1
+S1
+R1
 R9
 R10
 R11
-!i113 0
+!i122 0
+L0 347 9
 R12
-R1
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
 vstimulus
-R2
-R3
+R8
+R7
 !i10b 1
-!s100 ^[1jV;hCcjWVQ0I7RG2=c1
-IDz_V?K7A5X]z8eE25bKnK3
+!s100 GUQ6lVhDWlYdZZkG6R;DE0
+IEWSe[YDYPAFTeEkOkMjDJ2
 S1
-R0
-w1699481769
+R1
+w1699484733
 8datapath_tb.sv
 Fdatapath_tb.sv
 !i122 0
-L0 2 74
-R7
-R8
+L0 2 91
+R12
+R13
 r1
 !s85 0
 31
-R9
-R10
-R11
+R14
+R15
+R16
 !i113 0
-R12
-R1
+R17
+R5

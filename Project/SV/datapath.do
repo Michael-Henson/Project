@@ -43,6 +43,14 @@ add wave -hex /stimulus/dut/grid
 #add wave -hex /stimulus/dut/reset
 #add wave -hex /stimulus/dut/clk
 add wave -hex /stimulus/dut/grid_evolve
+add wave -binary /stimulus/grid15
+add wave -binary /stimulus/grid14
+add wave -binary /stimulus/grid13
+add wave -binary /stimulus/grid12
+add wave -binary /stimulus/grid11
+add wave -binary /stimulus/grid10
+add wave -binary /stimulus/grid9
+add wave -binary /stimulus/grid8
 add wave -binary /stimulus/grid7
 add wave -binary /stimulus/grid6
 add wave -binary /stimulus/grid5
