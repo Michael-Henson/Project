@@ -4,6 +4,12 @@ z2
 Z0 !s99 nomlopt
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
@@ -24,156 +30,156 @@ n@_opt
 Z6 OL;O;2021.3;73
 R1
 T_opt1
-Z7 !s110 1699485339
-V8Gnb8bZ>a_1EaN9kzE1dR2
+!s110 1700065223
+VWkHO1DehihB4<AmDEUV1`1
 R2
-=1-00be4390592b-654c169b-2bc-6798
+=1-cc1531237ecc-6554efc6-3dd-294
 R3
 R4
 R5
 n@_opt1
 R6
 vdatapath
-Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-R7
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1700065222
 !i10b 1
-!s100 K;KB]2WYT]`m3_A:lJNXz1
-IL@[95Z:=DP^=?7U`aPZFb3
+!s100 @3dMhBEGIfOgH5[bERzBz2
+IRcLTOd^TBoz=I6QmRlAzZ2
 S1
-R1
-Z9 w1699485206
-Z10 8datapath.sv
-Z11 Fdatapath.sv
+Z9 dC:/Users/creep/Desktop/Project/Project/SV
+Z10 w1700065133
+Z11 8datapath.sv
+Z12 Fdatapath.sv
 !i122 0
-L0 7 279
-Z12 VDg1SIo80bB@j0V0VzS_@n1
-Z13 OL;L;2021.3;73
+L0 7 294
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z14 !s108 1699485339.000000
-Z15 !s107 datapath_tb.sv|datapath.sv|
-Z16 !s90 datapath.sv|datapath_tb.sv|
+Z15 !s108 1700065222.000000
+Z16 !s107 datapath_tb.sv|datapath.sv|
+Z17 !s90 -reportprogress|300|datapath.sv|datapath_tb.sv|
 !i113 0
-Z17 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z18 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
 vevolve3
-R8
 R7
+R8
 !i10b 1
-!s100 8^BVJikPf7Vi=m;z4NH3l0
-IoHcj0oK;f`oD_V?R557D21
+!s100 =AI2S@QF<8L>DCl>D]3GM0
+Iin_`[VbMT;Vn4iGKo=UUP2
 S1
-R1
 R9
 R10
 R11
-!i122 0
-L0 288 14
 R12
+!i122 0
+L0 303 14
 R13
+R14
 r1
 !s85 0
 31
-R14
 R15
 R16
-!i113 0
 R17
+!i113 0
+R18
 R5
 vevolve5
-R8
 R7
+R8
 !i10b 1
-!s100 3G^SJC<C_2d21G;icTme`0
-IoanDVkZVDaUeAN?[6];bk3
+!s100 >c6`L1eWYh`O51R@gTZoY0
+IO4R=?Y;@UmVd=a<F9:N;<3
 S1
-R1
 R9
 R10
 R11
-!i122 0
-L0 303 17
 R12
+!i122 0
+L0 318 17
 R13
+R14
 r1
 !s85 0
 31
-R14
 R15
 R16
-!i113 0
 R17
+!i113 0
+R18
 R5
 vevolve8
-R8
 R7
+R8
 !i10b 1
-!s100 ;QLzWeGa^ZJDA7=4Tz8R@3
-I[<ioRQecKQiK?E3>^U8^`0
+!s100 RU9e:Znk]E5e_mLJUO>[_3
+Il^C]Z<SWPOTkkF4Gie?0Q0
 S1
-R1
 R9
 R10
 R11
-!i122 0
-L0 322 23
 R12
+!i122 0
+L0 337 23
 R13
+R14
 r1
 !s85 0
 31
-R14
 R15
 R16
-!i113 0
 R17
+!i113 0
+R18
 R5
 vrules
-R8
 R7
+R8
 !i10b 1
-!s100 Q893N6A78^DZQQ^2<TiG;0
-IDBlb:KD<T7@BD8o6[=GA_1
+!s100 ;^zQn94iXA^?9^Q@iPOY]0
+IjCFPJ8z6OIcd=fM3SLGWT3
 S1
-R1
 R9
 R10
 R11
-!i122 0
-L0 347 9
 R12
+!i122 0
+L0 362 9
 R13
+R14
 r1
 !s85 0
 31
-R14
 R15
 R16
-!i113 0
 R17
+!i113 0
+R18
 R5
 vstimulus
-R8
 R7
+R8
 !i10b 1
-!s100 GUQ6lVhDWlYdZZkG6R;DE0
-IEWSe[YDYPAFTeEkOkMjDJ2
+!s100 65TnTT2ONCieOhB?Mm0>V3
+Igo796C5f0;@Qi5IkILni[2
 S1
-R1
-w1699484733
+R9
+w1700065210
 8datapath_tb.sv
 Fdatapath_tb.sv
 !i122 0
 L0 2 91
-R12
 R13
+R14
 r1
 !s85 0
 31
-R14
 R15
 R16
-!i113 0
 R17
+!i113 0
+R18
 R5

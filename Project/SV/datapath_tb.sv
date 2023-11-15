@@ -74,10 +74,10 @@ module stimulus ();
 
    initial 
      begin
-      //assign initialState = 64'h0412_6424_0034_3C28;
-      assign initialState = 256'h0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000;       
-      #0 grid = initialState;
-	   #41  grid = grid_evolve;
+      assign initialState = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
+      //assign initialState = 256'h0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000;       
+      #0   grid = initialState;
+	 #41  grid = grid_evolve;
       #41  grid = grid_evolve;
       #41  grid = grid_evolve;
       #41  grid = grid_evolve;
