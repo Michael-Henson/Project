@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Wed Nov 15 15:50:55 2023
+# Process ID: 21860
+# Current directory: C:/Users/mhens11/Desktop/Project/Project/Vivado/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19568 C:\Users\mhens11\Desktop\Project\Project\Vivado\Project\Project.xpr
+# Log file: C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/vivado.log
+# Journal file: C:/Users/mhens11/Desktop/Project/Project/Vivado/Project\vivado.jou
+# Running On: CEAT-ENDV350-05, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68431 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/mhens11/Desktop/Project/Project/SV/datapath.sv
+update_compile_order -fileset sources_1

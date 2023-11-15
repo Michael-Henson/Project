@@ -4,12 +4,58 @@
  
  */
 
-module datapath ( grid, grid_evolve );
+module datapath (clk, grid_evolve, initial_state, run, reset);
 
+logic [255:0] 	grid;
+input logic clk;
+input logic [255:0]  initial_state;
+input logic          reset;
+input logic          run;
+output logic [255:0] grid_evolve;
+
+typedef enum 	logic [1:0] {S0, S1, S2, S3} statetype;
+   statetype state, nextstate;
+   
+   // state register
+   always_ff @(posedge clk, posedge reset)
+     if (reset) state <= S0;
+     else if (run) state <= S1;
+     else state <= S2;
+   
+   // next state logic
+   evolve efga (grid, grid_evolve);
+   always_comb
+     case (state)
+       S0: begin 
+         grid = initial_state;
+         if(run) nextstate <= S1;
+         else nextstate <= S0;
+       end
+
+       S1: begin
+         grid = grid_evolve;
+         if(run) nextstate <= S1;
+         else if(run == 0) nextstate <= S2;
+         else nextstate <= S0;
+       end
+
+       S2: begin
+         if(run) nextstate <= S1;
+         else if(run == 0) nextstate <= S2;
+         else nextstate <= S0;
+       end
+
+       S3: begin
+         nextstate <= S0;
+       end
+     endcase
+
+endmodule
+
+module evolve (grid, grid_evolve);
 input logic [255:0] 	grid;
 output logic [255:0] 	grid_evolve;
-
-//row 1   
+//row 1  
 evolve3 e0 (grid_evolve[0], grid[1], grid[16], grid[17], grid[0]);
 evolve5 e1 (grid_evolve[1], grid[0], grid[2], grid[16], grid[17], grid[18], grid[1]);
 evolve5 e2 (grid_evolve[2], grid[1], grid[3], grid[17], grid[18], grid[19], grid[2]);

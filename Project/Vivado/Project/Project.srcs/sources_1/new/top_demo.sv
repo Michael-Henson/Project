@@ -55,7 +55,16 @@ module top_demo
   logic        smol_clk;
    
   // Place Conway Game of Life instantiation here
- 
+  logic [255:0] initialState;
+  logic [255:0] grid;
+  logic [255:0] grid_evolve;
+  logic reset;
+  assign initialState = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
+  assign reset = btn[0];
+  if(reset == 1){
+    
+  
+  datapath (grid, grid_evolve);
   // HDMI
   // logic hdmi_out_en;
   //assign hdmi_out_en = 1'b0;
@@ -91,3 +100,5 @@ module top_demo
   assign smol_clk = CURRENT_COUNT == 17'd100000 ? 1'b1 : 1'b0;
 
 endmodule
+
+
