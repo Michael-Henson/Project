@@ -25,7 +25,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 /* verilator lint_off DECLFILENAME */
-
+//mux2 #(256)m1 (d0,d1,s,y);
 module mux2 #(parameter WIDTH = 8) (
   input  logic [WIDTH-1:0] d0, d1, 
   input  logic             s, 

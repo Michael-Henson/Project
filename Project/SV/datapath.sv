@@ -3,15 +3,24 @@
  Conway's Game of Life modeled in SVerilog
  
  */
-
 module datapath (clk, grid_evolve, initial_state, run, reset);
-
-logic [255:0] 	grid;
 input logic clk;
 input logic [255:0]  initial_state;
 input logic          reset;
 input logic          run;
 output logic [255:0] grid_evolve;
+
+logic [255:0] 	grid;
+
+   evolve efga (grid, grid_evolve);
+   fsm f1 (clk, run, reset);
+endmodule
+
+module fsm (clk, run, reset);
+
+input logic clk;
+input logic          reset;
+input logic          run;
 
 typedef enum 	logic [1:0] {S0, S1, S2, S3} statetype;
    statetype state, nextstate;
@@ -19,21 +28,17 @@ typedef enum 	logic [1:0] {S0, S1, S2, S3} statetype;
    // state register
    always_ff @(posedge clk, posedge reset)
      if (reset) state <= S0;
-     else if (run) state <= S1;
-     else state <= S2;
+     else state <= nextstate;
    
    // next state logic
-   evolve efga (grid, grid_evolve);
    always_comb
      case (state)
        S0: begin 
-         grid = initial_state;
          if(run) nextstate <= S1;
          else nextstate <= S0;
        end
 
        S1: begin
-         grid = grid_evolve;
          if(run) nextstate <= S1;
          else if(run == 0) nextstate <= S2;
          else nextstate <= S0;
