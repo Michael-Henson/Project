@@ -55,20 +55,39 @@ module top_demo
   logic        smol_clk;
    
   // Place Conway Game of Life instantiation here
-  logic [255:0] initialState;
-  logic [255:0] grid;
-  logic [255:0] grid_evolve;
-  logic reset;
-  assign initialState = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
-  assign reset = btn[0];
-  if(reset == 1){
-    
+  //logic [255:0] initialState;
+  //logic [255:0] grid;
+  //logic [255:0] grid_evolve;
+  //logic reset;
+  //assign initialState = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
+  //assign reset = btn[0];
+  //if(reset == 1){
   
-  datapath (grid, grid_evolve);
+  logic clk;
+  logic [255:0] ffout, initial_seed;
+  logic run, reset;
+  
+  //want to do switch case for initial_seed, but for now:
+  //assign initial_seed = 256'h0000e00000;
+  assign run = sw[7];
+  assign reset = btn[0];
+   
+  always @(*) begin
+  case (sw[1:0])
+    2'b00 : initial_seed = 256'h0000e00000;
+    2'b01 : initial_seed = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
+    2'b10 : initial_seed = 256'h0251_6161_4654_5C51_F151_5514_5454_0330_30F5_1651_1461_4451_8844_1354_0005_4646;
+    2'b11 : initial_seed = 256'h5323_7647_3647_2537_7678_1927_8965_2783_7648_6841_0984_9328_9874_1620_1638_0854;
+  endcase
+  end
+   
+  clk_div clock(sysclk_125mhz, reset, clk);
+  datapath data(clk, ffout, initial_seed, run, reset);
+
   // HDMI
   // logic hdmi_out_en;
   //assign hdmi_out_en = 1'b0;
-  hdmi_top test (n2, sysclk_125mhz, hdmi_d_p, hdmi_d_n, hdmi_clk_p, 
+  hdmi_top test (ffout, sysclk_125mhz, hdmi_d_p, hdmi_d_n, hdmi_clk_p, 
 		         hdmi_clk_n, hdmi_cec, hdmi_sda, hdmi_scl, hdmi_hpd);
   
   // 7-segment display
@@ -100,5 +119,17 @@ module top_demo
   assign smol_clk = CURRENT_COUNT == 17'd100000 ? 1'b1 : 1'b0;
 
 endmodule
-
+//clock divider
+module clk_div (input logic clk, input logic rst, output logic clk_en);
+logic [23:0] clk_count;
+always_ff @(posedge clk)
+//posedge defines a rising edge (transition from 0 to 1)
+begin
+if (rst)
+clk_count <= 24'h0;
+else
+clk_count <= clk_count + 1;
+end
+assign clk_en = clk_count[23];
+endmodule
 

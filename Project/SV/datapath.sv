@@ -3,24 +3,32 @@
  Conway's Game of Life modeled in SVerilog
  
  */
-module datapath (clk, grid_evolve, initial_state, run, reset);
+module datapath (clk, ffout, initial_seed, run, reset);
 input logic clk;
-input logic [255:0]  initial_state;
+input logic [255:0]  initial_seed;
 input logic          reset;
 input logic          run;
-output logic [255:0] grid_evolve;
+output logic [255:0] ffout;
 
 logic [255:0] 	grid;
+logic [255:0]   grid_evolve;
+logic start_or_cont;
+logic en;
 
    evolve efga (grid, grid_evolve);
-   fsm f1 (clk, run, reset);
+   fsm f1 (clk, run, reset, start_or_cont, en);
+   mux2 #(256)m1 (ffout, initial_seed, start_or_cont, grid);
+   flopen #(256)flop1 (clk, en, grid_evolve, ffout);
+
 endmodule
 
-module fsm (clk, run, reset);
+module fsm (clk, run, reset, start_or_cont, en);
 
 input logic clk;
 input logic          reset;
 input logic          run;
+output logic         start_or_cont;
+output logic         en; 
 
 typedef enum 	logic [1:0] {S0, S1, S2, S3} statetype;
    statetype state, nextstate;
@@ -34,20 +42,48 @@ typedef enum 	logic [1:0] {S0, S1, S2, S3} statetype;
    always_comb
      case (state)
        S0: begin 
-         if(run) nextstate <= S1;
-         else nextstate <= S0;
+         if(run) begin
+          nextstate <= S1;
+          start_or_cont = 1'b1;
+          en = 1'b1;
+         end
+         else begin 
+          nextstate <= S0;
+          start_or_cont = 1'b1;
+          en = 1'b1;
+         end
        end
 
        S1: begin
-         if(run) nextstate <= S1;
-         else if(run == 0) nextstate <= S2;
-         else nextstate <= S0;
+         if(run) begin 
+          nextstate <= S1;
+          start_or_cont = 1'b0;
+          en = 1'b1;
+         end
+         else if(run == 0) begin 
+          nextstate <= S2;
+          start_or_cont = 1'b0;
+          en = 1'b1;
+         end
+         else begin 
+          nextstate <= S0;
+          start_or_cont = 1'b1;
+          en = 1'b1;
+         end
        end
 
        S2: begin
-         if(run) nextstate <= S1;
-         else if(run == 0) nextstate <= S2;
-         else nextstate <= S0;
+         if(run) begin 
+          nextstate <= S1;
+         end
+         else if(run == 0) begin 
+          nextstate <= S2;
+          start_or_cont = 1'b0;
+          en = 1'b0;
+         end
+         else begin
+          nextstate <= S0;
+         end
        end
 
        S3: begin
@@ -55,6 +91,25 @@ typedef enum 	logic [1:0] {S0, S1, S2, S3} statetype;
        end
      endcase
 
+endmodule
+
+module mux2 #(parameter WIDTH = 8) (
+  input  logic [WIDTH-1:0] d0, d1, 
+  input  logic             s, 
+  output logic [WIDTH-1:0] y);
+
+  assign y = s ? d1 : d0; 
+endmodule
+
+`timescale 1ns / 1ps
+module flopen #(parameter WIDTH = 8) (
+  input  logic             clk, en,
+  input  logic [WIDTH-1:0] d, 
+  output logic [WIDTH-1:0] q);
+
+  always_ff @(posedge clk)
+    if (en) q <= #1 d;
+    else q <= q;
 endmodule
 
 module evolve (grid, grid_evolve);

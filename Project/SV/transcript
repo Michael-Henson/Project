@@ -14,12 +14,17 @@
 # do datapath.do
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is mhens11@CEAT-ENDV350-05.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is mhens11@CEAT-ENDV350-05.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is mhens11@CEAT-ENDV350-05.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is calwebb@CEAT-ENDV350-06.
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 17:28:31 on Nov 15,2023
+# Start time: 15:42:16 on Nov 30,2023
 # vlog -reportprogress 300 datapath.sv datapath_tb.sv 
 # -- Compiling module datapath
+# -- Compiling module fsm
+# -- Compiling module mux2
+# -- Compiling module flopen
 # -- Compiling module evolve
 # -- Compiling module evolve3
 # -- Compiling module evolve5
@@ -29,11 +34,12 @@
 # 
 # Top level modules:
 # 	stimulus
-# End time: 17:28:31 on Nov 15,2023, Elapsed time: 0:00:00
+# End time: 15:42:16 on Nov 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 17:28:31 on Nov 15,2023
+# Start time: 15:42:16 on Nov 30,2023
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fsm(fast)".
 # Loading sv_std.std
 # Loading work.stimulus(fast)
 # Loading work.datapath(fast)
@@ -42,10 +48,19 @@
 # Loading work.rules(fast)
 # Loading work.evolve5(fast)
 # Loading work.evolve8(fast)
+# Loading work.fsm(fast)
+# Loading work.mux2(fast)
+# Loading work.flopen(fast)
 # .main_pane.list.interior.cs.body
 # .main_pane.wave.interior.cs.body.pw.wf
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: mhens11  Hostname: CEAT-ENDV350-05  ProcessID: 23992
-#           Attempting to use alternate WLF file "./wlftx00i70".
+#           Attempting to use alternate WLF file "./wlfth22sr1".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftx00i70
+#           Using alternate file: ./wlfth22sr1
+# ** Note: $finish    : datapath_tb.sv(102)
+#    Time: 700 ns  Iteration: 0  Instance: /stimulus
+# 1
+# Break in Module stimulus at datapath_tb.sv line 102
+# End time: 16:16:01 on Nov 30,2023, Elapsed time: 0:33:45
+# Errors: 0, Warnings: 2

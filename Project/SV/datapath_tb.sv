@@ -2,9 +2,10 @@
 module stimulus ();
 
    logic  clk;
-   logic  [255:0] initial_state;
+   logic  [255:0] initial_seed;
    logic  reset;
    logic run;
+ 
    
    logic  [255:0] grid;
    logic  [255:0] grid_evolve;
@@ -31,7 +32,7 @@ module stimulus ();
    integer desc3;
    
    // Instantiate DUT
-   datapath dut (clk, grid_evolve, initial_state, run, reset);   
+   datapath dut (clk, grid_evolve, initial_seed, run, reset);   
    
    // Setup the clock to toggle every 1 time units 
    initial 
@@ -43,17 +44,18 @@ module stimulus ();
    initial
      begin
 	// Gives output file name
-	handle3 = $fopen("fsm.out");
+	handle3 = $fopen("datapath.out");
 	// Tells when to finish simulation		
      end
-/*
+
    always 
      begin
 	desc3 = handle3;
-	#5 $fdisplay(desc3, "%b %b || %b", 
-		     reset, a, y);
+	#10 $fdisplay(desc3, " %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n\n", 
+     grid_evolve[15:0], grid_evolve[31:16], grid_evolve[47:32], grid_evolve[63:48], grid_evolve[79:64], grid_evolve[95:80], grid_evolve[111:96], grid_evolve[127:112],
+      grid_evolve[143:128], grid_evolve[159:144], grid_evolve[175:160], grid_evolve[191:176], grid_evolve[207:192], grid_evolve[223:208], grid_evolve[239:224], grid_evolve[255:240]);
      end   
-   */
+   
 
    assign grid0 = grid_evolve[15:0];
    assign grid1 = grid_evolve[31:16];
@@ -74,13 +76,16 @@ module stimulus ();
 
    initial 
      begin
-     //#0 initial_state = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
-     #0 initial_state = 256'h0000e00000;
+     //#0 initial_seed = 256'h0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28_0412_6424_0034_3C28;
+     #0 initial_seed = 256'h0000e00000;
      #0 reset = 1'b1;
      #0 run = 1'b0;
      #40 reset = 1'b0;
      #40 run = 1'b1;
-      //assign initial_state = 256'h0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000;        
+     #40 run = 1'b0;
+     #40 run = 1'b1;
+     #40 reset = 1'b1;
+      //assign initial_seed = 256'h0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000;        
       /*
       #0   in = 2;
 	 #41  grid = grid_evolve;

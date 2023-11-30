@@ -61,9 +61,9 @@ add wave -binary /stimulus/grid1
 add wave -binary /stimulus/grid0
 add wave -binary /stimulus/run
 add wave -binary /stimulus/reset
-add wave -binary /stimulus/initial_state
-add wave -binary /stimulus/dut/state
-add wave -binary /stimulus/dut/nextstate
+add wave -binary /stimulus/initial_seed
+add wave -binary /stimulus/dut/f1/state
+add wave -binary /stimulus/dut/f1/nextstate
 
 
 add list -hex -r /stimulus/*
