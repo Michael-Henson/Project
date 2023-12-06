@@ -4,9 +4,10 @@
 using namespace std;
 
 int main(){
-	int gridSize = 16;
+	int gridSize = 24;
 	int gridNum = (gridSize * gridSize) - 1;
 	int i = 0, j;
+	int yes;
 	while(i <= gridNum){
 		if(i < gridSize){
 			if(i % gridSize == 0){	//top left corner
@@ -46,4 +47,5 @@ int main(){
 		}
 		++i;	
 		}
+		cin >> yes;
 }
