@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.tcl"
+  variable script "C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.tcl"
   variable category "vivado_impl"
 }
 
@@ -131,15 +131,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.cache/wt [current_project]
-  set_property parent.project_path C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.xpr [current_project]
-  set_property ip_output_repo C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.cache/wt [current_project]
+  set_property parent.project_path C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.xpr [current_project]
+  set_property ip_output_repo C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/synth_1/top_demo.dcp
+  add_files -quiet C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/synth_1/top_demo.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
+  read_xdc C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

@@ -3,30 +3,38 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Nov 30 15:51:02 2023
-# Process ID: 19728
-# Current directory: C:/Users/calwebb/Desktop/Project/Project/Vivado/Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent38420 C:\Users\calwebb\Desktop\Project\Project\Vivado\Project\Project.xpr
-# Log file: C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/vivado.log
-# Journal file: C:/Users/calwebb/Desktop/Project/Project/Vivado/Project\vivado.jou
-# Running On: CEAT-ENDV350-06, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68431 MB
+# Start of session at: Thu Dec  7 12:48:30 2023
+# Process ID: 14784
+# Current directory: C:/Users/mhens11/Desktop/Project/Project/Vivado/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5964 C:\Users\mhens11\Desktop\Project\Project\Vivado\Project\Project.xpr
+# Log file: C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/vivado.log
+# Journal file: C:/Users/mhens11/Desktop/Project/Project/Vivado/Project\vivado.jou
+# Running On: CEAT-ENDV350-05, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68431 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.xpr
+open_project C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.xpr
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
+launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
-open_run impl_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
 current_hw_device [get_hw_devices xc7z020_1]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+open_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 reset_run synth_1
@@ -34,7 +42,7 @@ launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 reset_run synth_1
@@ -42,26 +50,111 @@ launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

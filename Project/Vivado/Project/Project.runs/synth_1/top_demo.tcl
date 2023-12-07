@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.runs/synth_1/top_demo.tcl"
+  variable script "C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/synth_1/top_demo.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,31 +78,31 @@ create_project -in_memory -part xc7z020clg484-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.cache/wt [current_project]
-set_property parent.project_path C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.cache/wt [current_project]
+set_property parent.project_path C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv
-  C:/Users/calwebb/Desktop/Project/Project/SV/datapath.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv
-  C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv
+  C:/Users/mhens11/Desktop/Project/Project/SV/datapath.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv
+  C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -113,8 +113,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
-set_property used_in_implementation false [get_files C:/Users/calwebb/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
+read_xdc C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
+set_property used_in_implementation false [get_files C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
