@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Thu Dec  7 16:57:18 2023
+| Date             : Fri Dec  8 16:21:16 2023
 | Host             : CEAT-ENDV350-05 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_demo_power_routed.rpt -pb top_demo_power_summary_routed.pb -rpx top_demo_power_routed.rpx
 | Design           : top_demo
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+-----------------------------------+
-| Total On-Chip Power (W)  | 124.857 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 140.921 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                      |
 | Power Budget Margin (W)  | NA                                |
-| Dynamic (W)              | 123.816                           |
+| Dynamic (W)              | 139.880                           |
 | Device Static (W)        | 1.041                             |
 | Effective TJA (C/W)      | 11.5                              |
 | Max Ambient (C)          | 0.0                               |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |    54.793 |    28369 |       --- |             --- |
-|   LUT as Logic |    54.599 |    19335 |     53200 |           36.34 |
-|   Register     |     0.116 |      879 |    106400 |            0.83 |
-|   CARRY4       |     0.047 |       20 |     13300 |            0.15 |
+| Slice Logic    |    62.276 |    27672 |       --- |             --- |
+|   LUT as Logic |    62.068 |    23099 |     53200 |           43.42 |
+|   Register     |     0.140 |      877 |    106400 |            0.82 |
+|   CARRY4       |     0.038 |       20 |     13300 |            0.15 |
 |   BUFG         |     0.029 |        5 |        32 |           15.63 |
 |   F7/F8 Muxes  |     0.002 |       10 |     53200 |            0.02 |
 |   Others       |     0.000 |       31 |       --- |             --- |
-| Signals        |    38.459 |    27602 |       --- |             --- |
+| Signals        |    47.130 |    26911 |       --- |             --- |
 | MMCM           |     3.367 |        1 |         4 |           25.00 |
-| I/O            |    27.198 |       41 |       200 |           20.50 |
+| I/O            |    27.106 |       41 |       200 |           20.50 |
 | Static Power   |     1.041 |          |           |                 |
-| Total          |   124.857 |          |           |                 |
+| Total          |   140.921 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    94.110 |      93.811 |      0.299 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     3.029 |       2.929 |      0.100 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     7.496 |       7.495 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |   110.261 |     109.962 |      0.299 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     3.021 |       2.921 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     7.474 |       7.473 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -147,21 +147,21 @@ Table of Contents
 +-----------------------------------------+-----------+
 | Name                                    | Power (W) |
 +-----------------------------------------+-----------+
-| top_demo                                |   123.816 |
-|   clock                                 |     0.087 |
-|   data                                  |    69.772 |
-|     f1                                  |     0.569 |
-|     flop1                               |    69.203 |
-|   driver                                |     0.467 |
-|   test                                  |    18.941 |
-|     hdmi                                |     3.461 |
-|       serializer                        |     0.105 |
-|       tmds_gen[0].tmds_channel          |     0.253 |
-|       tmds_gen[1].tmds_channel          |     0.365 |
-|       tmds_gen[2].tmds_channel          |     0.297 |
-|       true_hdmi_output.packet_assembler |     0.260 |
-|       true_hdmi_output.packet_picker    |     0.764 |
-|     hdmi_pll                            |     3.424 |
+| top_demo                                |   139.880 |
+|   clock                                 |     0.070 |
+|   data                                  |    79.085 |
+|     f1                                  |     0.581 |
+|     flop1                               |    78.504 |
+|   driver                                |     0.436 |
+|   test                                  |     9.747 |
+|     hdmi                                |     3.583 |
+|       serializer                        |     0.101 |
+|       tmds_gen[0].tmds_channel          |     0.261 |
+|       tmds_gen[1].tmds_channel          |     0.434 |
+|       tmds_gen[2].tmds_channel          |     0.299 |
+|       true_hdmi_output.packet_assembler |     0.240 |
+|       true_hdmi_output.packet_picker    |     0.714 |
+|     hdmi_pll                            |     3.425 |
 +-----------------------------------------+-----------+
 
 

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/impl_1/top_demo.tcl"
+  variable script "C:/Users/calwebb/Desktop/Project-main/Project/Vivado/Project/Project.runs/impl_1/top_demo.tcl"
   variable category "vivado_impl"
 }
 
@@ -131,15 +131,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.cache/wt [current_project]
-  set_property parent.project_path C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.xpr [current_project]
-  set_property ip_output_repo C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/calwebb/Desktop/Project-main/Project/Vivado/Project/Project.cache/wt [current_project]
+  set_property parent.project_path C:/Users/calwebb/Desktop/Project-main/Project/Vivado/Project/Project.xpr [current_project]
+  set_property ip_output_repo C:/Users/calwebb/Desktop/Project-main/Project/Vivado/Project/Project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.runs/synth_1/top_demo.dcp
+  add_files -quiet C:/Users/calwebb/Desktop/Project-main/Project/Vivado/Project/Project.runs/synth_1/top_demo.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/mhens11/Desktop/Project/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
+  read_xdc C:/Users/calwebb/Desktop/Project-main/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -276,6 +276,9 @@ OPTRACE "route_design reports" START { REPORT }
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_demo_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_demo_clock_utilization_routed.rpt"
   create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file top_demo_bus_skew_routed.rpt -pb top_demo_bus_skew_routed.pb -rpx top_demo_bus_skew_routed.rpx"
+  create_report "impl_1_route_report_utilization_0" "report_utilization -file route_report_utilization_0.rpt -pb route_report_utilization_0.pb"
+  create_report "impl_1_route_report_timing_0" "report_timing -file route_report_timing_0.rpt -rpx route_report_timing_0.rpx"
+  create_report "impl_1_route_report_power_1" "report_power -file top_demo_power_routed_1.rpt -pb top_demo_power_summary_routed_1.pb -rpx top_demo_power_routed_1.rpx"
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_demo_routed.dcp

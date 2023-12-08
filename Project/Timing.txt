@@ -1,0 +1,49 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Fri Dec  8 15:36:35 2023
+| Host         : CEAT-ENDV350-05 running 64-bit major release  (build 9200)
+| Command      : report_timing -file route_report_timing_0.rpt -rpx route_report_timing_0.rpx
+| Design       : top_demo
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 btn[0]
+                            (input port)
+  Destination:            test/DataIn_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        42.045ns  (logic 2.485ns (5.910%)  route 39.560ns (94.090%))
+  Logic Levels:           8  (IBUF=1 LUT5=1 LUT6=6)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U12                                               0.000     0.000 r  btn[0] (IN)
+                         net (fo=0)                   0.000     0.000    btn[0]
+    U12                  IBUF (Prop_ibuf_I_O)         1.617     1.617 r  btn_IBUF[0]_inst/O
+                         net (fo=4189, routed)       32.974    34.590    data/flop1/btn_IBUF[0]
+    SLICE_X99Y88         LUT5 (Prop_lut5_I1_O)        0.124    34.714 r  data/flop1/DataIn[10]_i_883/O
+                         net (fo=1, routed)           0.797    35.511    data/flop1/DataIn[10]_i_883_n_0
+    SLICE_X99Y87         LUT6 (Prop_lut6_I1_O)        0.124    35.635 r  data/flop1/DataIn[10]_i_471/O
+                         net (fo=1, routed)           0.665    36.301    test/hdmi/DataIn[10]_i_64_3
+    SLICE_X99Y87         LUT6 (Prop_lut6_I5_O)        0.124    36.425 r  test/hdmi/DataIn[10]_i_176/O
+                         net (fo=1, routed)           1.171    37.596    test/hdmi/DataIn[10]_i_176_n_0
+    SLICE_X94Y84         LUT6 (Prop_lut6_I0_O)        0.124    37.720 r  test/hdmi/DataIn[10]_i_64/O
+                         net (fo=1, routed)           0.852    38.572    test/hdmi/DataIn[10]_i_64_n_0
+    SLICE_X90Y84         LUT6 (Prop_lut6_I2_O)        0.124    38.696 r  test/hdmi/DataIn[10]_i_21/O
+                         net (fo=1, routed)           1.006    39.701    test/hdmi/DataIn[10]_i_21_n_0
+    SLICE_X89Y91         LUT6 (Prop_lut6_I4_O)        0.124    39.825 r  test/hdmi/DataIn[10]_i_6/O
+                         net (fo=1, routed)           2.095    41.921    test/hdmi/DataIn[10]_i_6_n_0
+    SLICE_X67Y72         LUT6 (Prop_lut6_I5_O)        0.124    42.045 r  test/hdmi/DataIn[10]_i_1/O
+                         net (fo=1, routed)           0.000    42.045    test/hdmi_n_13
+    SLICE_X67Y72         FDRE                                         r  test/DataIn_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+

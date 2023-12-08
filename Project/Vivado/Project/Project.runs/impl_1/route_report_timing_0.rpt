@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Fri Dec  8 16:21:17 2023
+| Host         : CEAT-ENDV350-05 running 64-bit major release  (build 9200)
+| Command      : report_timing -file route_report_timing_0.rpt -rpx route_report_timing_0.rpx
+| Design       : top_demo
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 test/hdmi/cx_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            test/DataIn_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        22.374ns  (logic 2.197ns (9.819%)  route 20.177ns (90.181%))
+  Logic Levels:           10  (FDRE=1 LUT2=1 LUT3=1 LUT4=1 LUT5=2 LUT6=4)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y45         FDRE                         0.000     0.000 r  test/hdmi/cx_reg[1]/C
+    SLICE_X90Y45         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  test/hdmi/cx_reg[1]/Q
+                         net (fo=64, routed)          1.580     2.058    test/hdmi/cx[1]
+    SLICE_X89Y45         LUT4 (Prop_lut4_I2_O)        0.295     2.353 r  test/hdmi/DataIn[23]_i_1445/O
+                         net (fo=2, routed)           0.799     3.151    test/hdmi/DataIn[23]_i_1445_n_0
+    SLICE_X89Y44         LUT6 (Prop_lut6_I1_O)        0.326     3.477 r  test/hdmi/DataIn[23]_i_769/O
+                         net (fo=42, routed)          6.208     9.685    test/hdmi/DataIn[23]_i_769_n_0
+    SLICE_X63Y82         LUT2 (Prop_lut2_I0_O)        0.152     9.837 r  test/hdmi/DataIn[23]_i_1856/O
+                         net (fo=47, routed)          2.571    12.408    test/hdmi/cx_reg[6]_14
+    SLICE_X83Y82         LUT3 (Prop_lut3_I1_O)        0.326    12.734 r  test/hdmi/DataIn[23]_i_1840/O
+                         net (fo=1, routed)           0.263    12.997    test/hdmi/DataIn[23]_i_1840_n_0
+    SLICE_X83Y82         LUT5 (Prop_lut5_I0_O)        0.124    13.121 r  test/hdmi/DataIn[23]_i_1107/O
+                         net (fo=24, routed)          2.291    15.412    test/hdmi/DataIn[23]_i_1107_n_0
+    SLICE_X77Y45         LUT6 (Prop_lut6_I5_O)        0.124    15.536 r  test/hdmi/DataIn[23]_i_369/O
+                         net (fo=24, routed)          2.442    17.977    test/hdmi/DataIn[23]_i_369_n_0
+    SLICE_X83Y81         LUT5 (Prop_lut5_I3_O)        0.124    18.101 r  test/hdmi/DataIn[23]_i_80/O
+                         net (fo=23, routed)          2.178    20.279    test/hdmi/DataIn[23]_i_80_n_0
+    SLICE_X80Y63         LUT6 (Prop_lut6_I3_O)        0.124    20.403 r  test/hdmi/DataIn[11]_i_3/O
+                         net (fo=1, routed)           1.847    22.250    test/hdmi/DataIn[11]_i_3_n_0
+    SLICE_X67Y46         LUT6 (Prop_lut6_I1_O)        0.124    22.374 r  test/hdmi/DataIn[11]_i_1/O
+                         net (fo=1, routed)           0.000    22.374    test/hdmi_n_12
+    SLICE_X67Y46         FDRE                                         r  test/DataIn_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
